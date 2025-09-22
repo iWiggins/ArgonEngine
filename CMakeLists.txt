@@ -685,6 +685,8 @@ target_precompile_headers(argonapp
         common/precompiled.h
 )
 
+set_property(TARGET argonapp PROPERTY CXX_STANDARD 11)
+
 target_link_libraries(argonapp
     PRIVATE
         ${OPENGL_LIBRARIES}
